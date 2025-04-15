@@ -11,12 +11,12 @@ The challenge involved extracting hidden information from an image using stegano
 1.  **Steganography:** I used Steghide to extract the hidden data from the image. The command used was:
 
     ```bash
-    steghide info atbash.jp""
+    steghide info atbash.jpg
     ```
-    atbash.jpg is the image , we can get it in the problem
+    atbash.jpg is the image , we can get it from the problem
 
     
-    This command extracts data from the image `hidetosee.jpg`.
+    This command extracts data from the image `atbash.jpg`.
 
 2.  **Decryption:** The extracted file was encrypted. The image description hinted at the Atbash Cipher. I used an Atbash cipher decoder to decrypt the contents of the file.
 

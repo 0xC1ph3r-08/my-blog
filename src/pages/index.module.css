@@ -1,23 +1,59 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 0 1rem 0; /* Top 2rem, Bottom 1rem */
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  border-radius: 10px;
+  font-family: monospace;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+/* Remove subtitle styling if not using */
+.heroBanner .hero__subtitle {
+  display: none;
 }
 
-.buttons {
+/* Remove duplicate .heroBanner definitions */
+/* Keep only one definition like the one above */
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 1rem; /* Or even 0.5rem if still too spaced */
+}
+
+.mainContent {
+  padding-top: 1rem; /* reduced from 3rem or 40px */
+  margin-top: 2rem;
+}
+
+.featuredSection {
+  margin-top: 1rem; /* Reduced from 3rem */
+}
+.featuredSection {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30%;
+  min-width: 280px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .card:hover {
+  transform: translateY(-5px);
+} */
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00ffd1;
+}
+
+.card p {
+  font-size: 1rem;
 }
