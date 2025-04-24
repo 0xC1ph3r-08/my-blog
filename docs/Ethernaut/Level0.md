@@ -31,6 +31,7 @@ await contract.infoNum()
 // 3. Follow the hints provided by returned messages
 await contract.info42()
 await contract.method7123949()
+await contract.password()
 
 // 4. Try submitting the password
 await contract.authenticate("ethernaut0")
