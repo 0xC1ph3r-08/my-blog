@@ -1,37 +1,71 @@
-# Ethernaut Level 0 – Instance Solved ✅
+# Level 0 : Hello Ethernaut
 
-## 🎯 Goal of the Level
-
-The objective of Level 0 was to **call a specific method on a Solidity smart contract** to unlock the level. It’s designed to introduce players to basic smart contract interaction through the browser console using MetaMask and a frontend ABI interface.
+I successfully completed **Level 0** of the [Ethernaut](https://ethernaut.openzeppelin.com/) Web3 wargame. This level introduced me to basic smart contract interactions using the browser console, helping me build foundational skills in reading and invoking Solidity methods through Web3.
 
 ---
 
-## 🧠 What I Learned
+## 🧠 Key Concepts Learned
 
-- How to **connect MetaMask** to an in-browser Solidity console.
-- How to **read the ABI** and available contract functions directly from the browser.
-- How to **call `view` functions** and **send transactions**.
-- How to troubleshoot common issues like `ReferenceError` and pending transactions.
-- How to **confirm on-chain interactions using MetaMask** and wait for mined transactions.
+- 🔍 Interacting with smart contracts using the browser developer console  
+- 🧪 Reading and calling public contract methods via Web3  
+- 🔑 Understanding Solidity method naming conventions  
+- ⛓ Submitting transactions and confirming them via MetaMask  
+- 💰 Using Web3 utility functions like `getBalance`  
 
 ---
 
-## 🧪 Commands I Used
+## 🛠 Commands and Utilities Used
 
-```js
-// 1. Get your address from MetaMask (player variable is pre-defined in Ethernaut)
-player
+| Command              | Description                                                   |
+|---------------------|---------------------------------------------------------------|
+| `player`            | Retrieves the current connected wallet address (via MetaMask) |
+| `getBalance(player)`| Returns the Ether balance (in wei) of the connected wallet    |
 
-// 2. Explore the contract's view functions
+---
+
+## ✅ Solution Walkthrough
+
+### 🔹 Step-by-Step Interaction
+
+```javascript
 await contract.info()
+// → 'You will find what you need in info1().'
+
 await contract.info1()
-await contract.info2("hello")
+// → 'Try info2(), but with "hello" as a parameter.'
+
+await contract.info2('hello')
+// → 'The property infoNum holds the number of the next info method to call.'
+
 await contract.infoNum()
+// → '42'
 
-// 3. Follow the hints provided by returned messages
 await contract.info42()
-await contract.method7123949()
-await contract.password()
+// → 'theMethodName is the name of the next method.'
 
-// 4. Try submitting the password
-await contract.authenticate("ethernaut0")
+await contract.theMethodName()
+// → 'The method name is method7123949.'
+
+await contract.method7123949()
+// → 'If you know the password, submit it to authenticate().'
+
+await contract.password()
+// → 'ethernaut0'
+
+await contract.authenticate('ethernaut0')
+// → Transaction sent via MetaMask. Once confirmed, the challenge is complete!
+```
+---
+## 🎯 Outcome
+After calling the authenticate() method with the correct password, the transaction was confirmed via MetaMask, and the level was successfully completed.
+
+---
+
+## 🧪 Skills Practiced
+Console-based smart contract exploration
+
+Dynamic method discovery and invocation
+
+Reading and interpreting contract state
+
+Submitting transactions on the Ethereum blockchain

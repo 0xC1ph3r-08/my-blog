@@ -28,7 +28,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/your-github-username/your-repo-name/edit/main/',
         },
         blog: {
           showReadingTime: true,
