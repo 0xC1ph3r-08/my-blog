@@ -1,4 +1,4 @@
-# 🖼️ NFT Marketplace (Solidity)
+#  NFT Marketplace
 
 This smart contract implements a basic **NFT Marketplace** in Solidity. It allows users to list, buy, and manage NFTs on a decentralized platform.
 

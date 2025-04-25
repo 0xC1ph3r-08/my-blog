@@ -1,4 +1,4 @@
-# 🔐 Multi-Signature Wallet (Solidity)
+#  Multi-Signature Wallet 
 
 This is a simple **Multi-Signature Wallet** smart contract written in Solidity. It allows multiple owners to collectively manage and approve transactions, increasing security and preventing unauthorized fund transfers.
 

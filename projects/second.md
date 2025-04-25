@@ -1,1 +1,0 @@
-gi hello namma

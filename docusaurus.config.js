@@ -1,12 +1,11 @@
 // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '0xc1ph3r',
+  title: '0xC1PH3R\'s BlOG',
   tagline: 'Cybersecurity Enthusiast',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-svg.svg',
 
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
@@ -40,38 +39,40 @@ const config = {
     ],
   ],
 
-  // ✅ Fix: Add unique ID to the pages plugin
   plugins: [
     [
-      "@docusaurus/plugin-content-docs",
-      
+      '@docusaurus/plugin-content-docs',
       {
         id: 'contact',
         path: 'contact',
         routeBasePath: 'contact',
         sidebarPath: require.resolve('./sidebarsContact.js'),
-
       },
     ],
     [
-      "@docusaurus/plugin-content-docs",
+      '@docusaurus/plugin-content-docs',
       {
-        id: 'projects',  // Unique identifier for the plugin
-        path: 'projects',  // Path to your folder, 'projects' here
-        routeBasePath: 'first',  // URL structure for the projects page
-        sidebarPath: require.resolve('./sidebarsProjects.js'),  // Link to the sidebar configuration
+        id: 'projects',
+        path: 'projects',
+        routeBasePath: 'projects', // Changed from 'first' to 'projects'
+        sidebarPath: require.resolve('./sidebarsProjects.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'timeline', // Ensure unique ID for timeline
+        path: 'TimeLine', // Path to your Timeline folder
+        routeBasePath: 'TimeLine', // Route for the Timeline pages
+        sidebarPath: require.resolve('./sidebarTimeline.js'), // Ensure sidebar file is correct
       },
     ],
   ],
 
-  themeConfig: ({
+  themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '0xc1ph3r',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: "C1PH3H's-SEC",
       items: [
         {
           type: 'docSidebar',
@@ -81,23 +82,30 @@ const config = {
         },
         {
           type: 'docSidebar',
+          sidebarId: 'projectsSidebar', // Link to your new projects sidebar
+          docsPluginId: 'projects', // Ensure it matches the plugin ID
+          position: 'right',
+          label: 'Projects',
+        },
+        
+        { to: '/blog', label: 'Blogs', position: 'right' },
+        {
+          type: 'docSidebar',
           sidebarId: 'contactSidebar',
-          docsPluginId: 'contact', // 👈 Required for second docs instance
+          docsPluginId: 'contact', // Required for second docs instance
           position: 'right',
           label: 'Contact',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'projectsSidebar',  // Link to your new projects sidebar
-          docsPluginId: 'projects',  // Ensure it matches the plugin ID
+          sidebarId: 'timelineSidebar', // Link to your new timeline sidebar
+          docsPluginId: 'timeline', // Ensure it matches the plugin ID
           position: 'right',
-          label: 'Projects',
+          label: 'TimeLine',
         },
-        { to: '/blog', label: 'Blogs', position: 'right' },
-        // { to: '/contact/contact', label: 'Contact', position: 'right' }, // 👈 Contact page link
       ],
     },
-  }),
+  },
 };
 
 export default config;

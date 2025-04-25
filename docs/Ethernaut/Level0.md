@@ -4,17 +4,17 @@ I successfully completed **Level 0** of the [Ethernaut](https://ethernaut.openze
 
 ---
 
-## 🧠 Key Concepts Learned
+##  Key Concepts Learned
 
-- 🔍 Interacting with smart contracts using the browser developer console  
-- 🧪 Reading and calling public contract methods via Web3  
-- 🔑 Understanding Solidity method naming conventions  
-- ⛓ Submitting transactions and confirming them via MetaMask  
-- 💰 Using Web3 utility functions like `getBalance`  
+-  Interacting with smart contracts using the browser developer console  
+-  Reading and calling public contract methods via Web3  
+-  Understanding Solidity method naming conventions  
+-  Submitting transactions and confirming them via MetaMask  
+-  Using Web3 utility functions like `getBalance`  
 
 ---
 
-## 🛠 Commands and Utilities Used
+##  Commands and Utilities Used
 
 | Command              | Description                                                   |
 |---------------------|---------------------------------------------------------------|
@@ -23,9 +23,9 @@ I successfully completed **Level 0** of the [Ethernaut](https://ethernaut.openze
 
 ---
 
-## ✅ Solution Walkthrough
+##  Solution Walkthrough
 
-### 🔹 Step-by-Step Interaction
+###  Step-by-Step Interaction
 
 ```javascript
 await contract.info()
@@ -56,12 +56,12 @@ await contract.authenticate('ethernaut0')
 // → Transaction sent via MetaMask. Once confirmed, the challenge is complete!
 ```
 ---
-## 🎯 Outcome
+##  Outcome
 After calling the authenticate() method with the correct password, the transaction was confirmed via MetaMask, and the level was successfully completed.
 
 ---
 
-## 🧪 Skills Practiced
+##  Skills Practiced
 Console-based smart contract exploration
 
 Dynamic method discovery and invocation

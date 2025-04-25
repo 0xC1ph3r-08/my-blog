@@ -21,7 +21,7 @@ function HomepageHeader() {
 
 export default function Home() {
   return (
-    <Layout title="Welcome to My Blog" description="A blog where I share my journey and knowledge">
+    <Layout description="A blog where I share my journey and knowledge">
       <HomepageHeader />
       <main className={clsx(styles.mainContent)}>
         <div className="container">
