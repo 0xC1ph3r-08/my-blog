@@ -72,7 +72,7 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: "C1PH3H's-SEC",
+      title: "C1PH3R's-SEC",
       items: [
         {
           type: 'docSidebar',
