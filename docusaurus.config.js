@@ -30,7 +30,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/your-github-username/your-repo-name/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -72,7 +71,7 @@ const config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: "C1PH3R's-SEC",
+      title: "C1PH3R's-securr",
       items: [
         {
           type: 'docSidebar',

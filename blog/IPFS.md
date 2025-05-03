@@ -54,6 +54,6 @@ IPFS is a peer-to-peer, distributed file storage protocol designed to make the w
 * **Vendor lock-in**
     * IPFS prevents vendor lock-in, as users have sovereignty over their data and infrastructure. This is enabled by content-addressing, which decouples the data from a single location or infrastructure provider. Unlike traditional cloud vendors, IPFS enables you to change data storage locations without changing things like APIs and data management. In addition, because IPFS is open-source, community-maintained and modular, users are not obligated to use a particular subsystem. Instead, users can customize IPFS for their preferred technologies, needs and values.
 
-## How it works?
-
-🚀 IPFS is revolutionizing decentralized storage! 🚀
+<!-- ## How it works?
+will be written soon ..
+🚀 IPFS is revolutionizing decentralized storage! 🚀 -->
