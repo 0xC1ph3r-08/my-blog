@@ -144,7 +144,7 @@ Enter the password for the identified hash: qwerty098
 Correct! You've cracked the SHA-256 hash with a secret found.
 The flag is: picoCTF{UseStr0nG_h@shEs_&PaSswDs!_3eb19d03}
 ```
-## What I learned?
+## What I learnt?
 1.  **MD5 algorithm:** Understanding its basic properties as a hashing algorithm and its vulnerability to cracking.
 2.  **SHA-1 and SHA-256:** Learning about these more secure hashing algorithms and their increased complexity compared to MD5.
 3.  **`nc verbal-sleep.picoctf.net 62644`:** Understanding that this command uses the Netcat utility (`nc`) to establish a direct network connection to a specified host (`verbal-sleep.picoctf.net`) and port (`62644`), allowing for interactive communication with the server. It's used here to interact with the challenge server, receive the hashes, and send the cracked passwords.
