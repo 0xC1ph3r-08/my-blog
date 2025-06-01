@@ -57,15 +57,15 @@ const config = {
         sidebarPath: require.resolve('./sidebarsProjects.js'),
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'timeline', // Ensure unique ID for timeline
-        path: 'TimeLine', // Path to your Timeline folder
-        routeBasePath: 'TimeLine', // Route for the Timeline pages
-        sidebarPath: require.resolve('./sidebarTimeline.js'), // Ensure sidebar file is correct
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'timeline', // Ensure unique ID for timeline
+    //     path: 'TimeLine', // Path to your Timeline folder
+    //     routeBasePath: 'TimeLine', // Route for the Timeline pages
+    //     sidebarPath: require.resolve('./sidebarTimeline.js'), // Ensure sidebar file is correct
+    //   },
+    // ],
   ],
 
   themeConfig: {
@@ -95,13 +95,13 @@ const config = {
           position: 'right',
           label: 'Contact',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'timelineSidebar', // Link to your new timeline sidebar
-          docsPluginId: 'timeline', // Ensure it matches the plugin ID
-          position: 'right',
-          label: 'TimeLine',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'timelineSidebar', // Link to your new timeline sidebar
+        //   docsPluginId: 'timeline', // Ensure it matches the plugin ID
+        //   position: 'right',
+        //   label: 'TimeLine',
+        // },
       ],
     },
   },
