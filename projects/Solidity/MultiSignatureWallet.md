@@ -1,4 +1,4 @@
-#  Multi-Signature Wallet 
+# Multi-Signature Wallet
 
 This is a simple **Multi-Signature Wallet** smart contract written in Solidity. It allows multiple owners to collectively manage and approve transactions, increasing security and preventing unauthorized fund transfers.
 
@@ -15,5 +15,3 @@ The contract ensures that a transaction can only be executed after a predefined 
 - Owner access control for all critical actions
 
 Feel free to fork or clone the repo and use it as a base for your secure Ethereum wallet projects.
-
-For more details :  [check blog](/blog/MultiSignatureWallet) 
