@@ -82,6 +82,10 @@ If even a single bit of the Message is changed between signing and verification,
 The `ECDSA` is a signature algorithm based on `Elliptic Curve Cryptography (ECC) `.
 The specific curve used in ECDSA is the `Secp256k1` curve , It was chosen for it's interoperability with `THE BITCOIN` , it's efficiency and security and this elliptic curve is symmetric about it's X-axis , therefore for every co-ordinate on the curve there exists another co-ordinate at the same point 'x' point .
 
+**This is a graph of secp256k1's elliptic curve y2 = x3 + 7 over the real numbers**
+
+![secp256k1](../static/img/Secp256k1.png)
+
 ## ECDSA is used to :
 
 - Generate Key pairs
